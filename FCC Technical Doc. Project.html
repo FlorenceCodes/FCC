@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media (min-width: 961px) {
+        p {
+          font-size: 15px;
+        }
+      }
+      html,
+      body {
+        min-width: 290px;
+        color: #273785;
+        background-color: #fff1a0;
+        font-family: "Fira Sans", sans-serif;
+        line-height: 1.5;
+      }
+      body {
+        display: block;
+        margin: 8px;
+      }
+      nav {
+        display: block;
+      }
+      #navbar {
+        position: fixed;
+        min-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+        border-right: solid;
+        border-color: rgba(0, 22, 22, 0.4);
+      }
+      #navbar ul {
+        height: 88%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+      }
+      header {
+        color: #273785;
+        font-weight: 1000px;
+        margin: 10px;
+        text-align: center;
+        font-size: 32px;
+      }
+      main {
+        display: block;
+      }
+      ul {
+        display: block;
+        list-style-type: disc;
+      }
+      li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+      }
+      #navbar li {
+        color: #273785;
+        border-top: 1px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
+      }
+      #navbar a {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #main-doc {
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+      }
+      section {
+        display: block;
+      }
+      #main-doc header {
+        text-align: left;
+        margin: 0px;
+      }
+      article {
+        display: block;
+      }
+      section article {
+        color: #273785;
+        margin: 15px;
+        font-size: 16px;
+      }
+      section li {
+        margin: 15px 0px 0px 20px;
+      }
+      code {
+        display: block;
+        text-align: left;
+        position: relative;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Basics</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#What_is_CSS">What is CSS</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Anatomy_of_CSS_Ruleset"
+            >Anatomy of CSS Ruleset</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Selecting_multiple_elements"
+            >Selecting multiple elements</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Fonts_and_text">Fonts and text</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#CSS_all_about_boxes"
+            >CSS all about boxes</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Centering_the_image"
+            >Centering the image</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_CSS">
+        <header>What is CSS</header>
+        <article>
+          <p>
+            Like HTML, CSS is not a programming language. It's not a markup
+            language either. CSS is a style sheet language. CSS is what you use
+            to selectively style HTML elements. For example, this CSS selects
+            paragraph text, setting the color to red:
+          </p>
+          <code>p { color: red; } </code>
+        </article>
+      </section>
+      <section class="main-section" id="Anatomy_of_CSS_Ruleset">
+        <header>Anatomy of CSS Ruleset</header>
+        <article>
+          <p>Note the other important parts of the syntax:</p>
+          <ul>
+            <li>
+              Apart from the selector, each ruleset must be wrapped in curly
+              braces.<code> ({}) </code>
+            </li>
+            <li>
+              Within each declaration, you must use a colon <code>(:) </code>to
+              separate the property from its value or values.
+            </li>
+            <li>
+              Within each ruleset, you must use a semicolon <code> (;)</code>to
+              separate each declaration from the next one.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Selecting_multiple_elements">
+        <header>Selecting multiple elements</header>
+        <article>
+          <p>
+            You can also select multiple elements and apply a single ruleset to
+            all of them. Separate multiple selectors by commas. For example:
+          </p>
+          <p>
+            There are many different types of selectors. The examples above use
+            element selectors, which select all elements of a given type. But we
+            can make more specific selections as well.
+          </p>
+          <code>p, li, h1 { color: red; }</code>
+        </article>
+      </section>
+      <section class="main-section" id="Fonts_and_text">
+        <header>Fonts and text</header>
+        <ol>
+          <li>
+            First, find the output from Google Fonts that you previously saved
+            from What will your website look like?. Add the link element
+            somewhere inside your index.html's head.<code
+              ><link
+                href="https://fonts.googleapis.com/css?family=Open+Sans"
+                rel="stylesheet"
+              />
+            </code>
+          </li>
+          <li>
+            Next, delete the existing rule you have in your style.css file. It
+            was a good test, but let's not continue with lots of red text.
+          </li>
+          <li>
+            Add the following lines (shown below), replacing the font-family
+            assignment with your font-family selection from What will your
+            website look like?. The property font-family refers to the font(s)
+            you want to use for text. This rule defines a global base font and
+            font size for the whole page. Since <code>html</code> is the parent
+            element of the whole page, all elements inside it inherit the same
+            font-size and font-family.
+          </li>
+          <li>
+            Now let's set font sizes for elements that will have text inside the
+            HTML body. We'll also center the heading. Finally, let's expand the
+            second ruleset (below) with settings for line height and letter
+            spacing to make body content more readable.
+            <code
+              >h1 { font-size: 60px; text-align: center; } p, li { font-size:
+              16px; line-height: 2; letter-spacing: 1px; }
+            </code>
+          </li>
+        </ol>
+      </section>
+      <section class="main-section" id="CSS_all_about_boxes">
+        <header>CSS all about boxes</header>
+        <article>
+          <p>
+            Something you'll notice about writing CSS: a lot of it is about
+            boxes. This includes setting size, color, and position. Most HTML
+            elements on your page can be thought of as boxes sitting on top of
+            other boxes.
+          </p>
+          <p>
+            CSS layout is mostly based on the box model. Each box taking up
+            space on your page has properties like: padding, the space around
+            the content. In the example below, it is the space around the
+            paragraph text. border, the solid line that is just outside the
+            padding. margin, the space around the outside of the border.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Centering_the_image">
+        <header>Centering the image</header>
+        <p>
+          Next, we center the image to make it look better. We could use the
+          margin: 0 auto trick again as we did for the body. But there are
+          differences that require an additional setting to make the CSS work.
+        </p>
+        <p>
+          The body is a block element, meaning it takes up space on the page.
+          The margin applied to a block element will be respected by other
+          elements on the page. In contrast, images are inline elements, for the
+          auto margin trick to work on this image, we must give it block-level
+          behavior using <code>display: block;</code>
+        </p>
+        <p>
+          Note: Don't be too concerned if you don't completely understand
+          display: block; or the differences between a block element and an
+          inline element. It will make more sense as you continue your study of
+          CSS. You can find more information about different display values on
+          MDN's display reference page.
+        </p>
+        <code>img { display: block; margin: 0 auto; } </code>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All the documentation in this page is taken from MDN</p>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
