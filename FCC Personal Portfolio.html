@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florence Ann Hodgson</title>
+    <link rel=”stylesheet”
+    href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow”
+    integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm”
+    crossorigin=”anonymous”>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media (min-width: 961px) {
+        p {
+          font-size: 15px;
+        }
+      }
+      body {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 70;
+        line-height: 1.4;
+        color: #fcf9f9;
+      }
+      body {
+        display: block;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        box-sizing: inherit;
+      }
+      .nav {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #f3f2c9;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+        z-index: 10;
+      }
+      .nav-list {
+        display: flex;
+        margin-right: 2rem;
+      }
+      .nav-list a {
+        color: black;
+        display: block;
+        font-size: 2.2rem;
+        padding: 2rem;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+      li {
+        color: black;
+        display: list-item;
+        text-align: -webkit-match-parent;
+      }
+      .welcome-section {
+        background: url("fern.jpg");
+        opacity: 0.7;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+
+      h1 {
+        color: white;
+        position: relative;
+        font-size: 78px;
+        font-family: "Alata", sans-serif;
+      }
+
+      p {
+        position: relative;
+        color: white;
+        display: block;
+        font-size: 52px;
+      }
+      .projects-section {
+        text-align: center;
+        background: #f3f2c9;
+        padding: 40px 10px;
+      }
+      section {
+        display: block;
+      }
+      .projects-section-header {
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+        margin: 0 auto 6rem auto;
+        max-width: 440px;
+        border-bottom: 0.2rem solid black;
+      }
+      h2 {
+        color: black;
+        display: block;
+        text-align: center;
+      }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+      }
+      .project-tile {
+        background: var(--main-gray);
+        box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+        border-radius: 2px;
+        color: black;
+      }
+      .project-image {
+        height: calc(100% - 6.8rem);
+        width: 100%;
+        object-fit: cover;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+      .project-title {
+        color: black;
+        font-size: 2rem;
+        padding: 2rem 0.5rem;
+      }
+      .contact-section {
+        background: linear-gradient(
+          114.3deg,
+          rgb(19, 126, 57) 0.2%,
+          rgb(8, 65, 91) 68.5%
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 80vh;
+        padding: 0 2rem;
+        color: #f3f2c9;
+      }
+      .contact-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+      }
+      .contact-details {
+        font-size: 2.4rem;
+        text-shadow: 1px 1px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+      }
+      footer {
+        text-align: center;
+        margin: 0 auto;
+        height: 15vh;
+        background-color: black;
+      }
+      .fab {
+        font-family: "Font Awesome 5 Brands";
+      }
+      .fa,
+      .fab,
+      .fal,
+      .far,
+      .fas {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+      }
+      .fa,
+      .fas {
+        font-weight: 900;
+      }
+      .fa,
+      .far,
+      .fas {
+        font-family: "Font Awesome 5 Free";
+      }
+      .footer {
+        margin: 0 auto;
+        border-top: 4px solid #f3f2c9;
+        display: flex;
+        font-size: 18px;
+        color: white;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">about.</a>
+        </li>
+        <li>
+          <a href="#projects">work.</a>
+        </li>
+        <li>
+          <a href="#contact">contact.</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="welcome-section" class="welcome-section">
+      <h1>florence ann hodgson.</h1>
+      <p>front end developer.</p>
+      <p>new zealander.</p>
+      <p>based in valencia, spain.</p>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">Projects</h2>
+      <div class="projects-grid">
+        <a
+          href="https://codepen.io/codepenFlo/full/RwgBmdo"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img class="project-image" src="Screenshot (31).png" alt="project" />
+          <p class="project-title">Tribute Page</p>
+        </a>
+        <a
+          href="https://codepen.io/codepenFlo/full/QWgZQVg"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img class="project-image" src="project2.png" alt="project2" />
+          <p class="project-title">Product Landing Page</p>
+        </a>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together.</h2>
+      </div>
+      <div class="contact-links">
+        <a
+          id="profile-link"
+          href="https://github.com/FlorenceCodes"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fab fa-github"></i>GitHub
+        </a>
+        <a
+          href="https://codepen.io/codepenFlo"
+          target="_blank"
+          class="btn contact-details"
+          >CodePen
+        </a>
+        <a href="mailto:example@example.com" class="btn contact-details">
+          <i class="fas fa-at"></i>Email
+        </a>
+        <a href="tel:555-555-5555" class="btn contact-details">
+          <i class="fas fa-mobile-alt"></i>Call me
+        </a>
+      </div>
+    </section>
+    <footer>
+      <span class="footer"> Created by me © 2021 Florence Hodgson</span>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
